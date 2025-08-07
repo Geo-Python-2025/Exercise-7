@@ -30,7 +30,7 @@ class TestProblem1:
         assert 'title' in variables
         
     
-    @points(1, "Problem 1, Part 3: Did you add an x-label to your plot?")
+    @points(0.5, "Problem 1, Part 3: Did you add an x-label to your plot?")
     def test_problem_1_part_3_xlabel(self, problem1):
         section_data, namespace = problem1
         section = "Part 3"  # Define the section key
@@ -38,7 +38,7 @@ class TestProblem1:
 
         assert 'x-label' in variables
 
-    @points(1, "Problem 1, Part 3: Did you add an y-label to your plot?")
+    @points(0.5, "Problem 1, Part 3: Did you add an y-label to your plot?")
     def test_problem_1_part_3_ylabel(self, problem1):
         section_data, namespace = problem1
         section = "Part 3"  # Define the section key
